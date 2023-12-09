@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-color: rgb(98, 204, 246);
+    --secondary-color: #64748B;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:1450px) {
+    .section-container {
+        max-width: 70%;
+    }
+}
+
+.primary-btn {
+    background: var(--primary-color);
+    color: #020617;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 6px 16px;
+    border: 2px solid var(--primary-color);
+    text-transform: capitalize;
+}
+
+.primary-btn:hover {
+    color: var(--primary-color);
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 6px 16px;
+    text-transform: capitalize;
+}
+
+.secondary-btn {
+    color: var(--primary-color);
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 6px 16px;
+    text-transform: capitalize;
+}
+
+.secondary-btn:hover {
+    background: var(--primary-color);
+    color: #020617;
+    border-radius: 5px;
+    padding: 6px 16px;
+    border: 2px solid var(--primary-color);
+    text-transform: capitalize;
+}
+
+.high-light-text {
+    color: var(--primary-color);
+}

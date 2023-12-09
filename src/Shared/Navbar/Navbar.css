@@ -1,46 +1,29 @@
-.navbar {
-    max-width: 80%;
-    margin: 0 auto;
-    z-index: 0;
+.nav {
+    position: relative;
+    z-index: 1;
+    /* overflow-x: hidden; */
 }
-
-.nav-item:hover {
-    color: red;
-    border-bottom: 1px solid red;
-    padding-bottom: 5px;
-    transition: .5s;
-}
-
-.active {
-    color: red;
-    border-bottom: 1px solid red;
-    padding-bottom: 5px;
-
-}
-
-@media screen and (max-width:640px) {
-
-    .not-open,
-    .is-open {
-        background: #f8f7f7;
+@media screen and (max-width:767px) {
+    .mobile-menu {
+        width: 0;
+        overflow: hidden;
+        transition: 0.5s;
         position: absolute;
-        width: 100%;
-        padding: 10%;
-        transition: .5s;
-        top: 60px;
-        /* transform: translateX(-100%); */
+        top: 45px;
+        left: -13%;
+        background: var(--secondary-color);
+        padding: 50px 0;
     }
 
-    .navitem {
-        margin-bottom: 15px;
+    .mobile-menu.open {
+        overflow-x: hidden;
+        width: 125.5%;
+        height: auto;
     }
-
-    .is-open {
-        left: 0;
+    .menu {
+        width: 78%;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    .not-open {
-        left: -642px;
-    }
-
+   
 }

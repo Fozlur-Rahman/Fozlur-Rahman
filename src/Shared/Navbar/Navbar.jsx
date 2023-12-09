@@ -1,49 +1,36 @@
-import { Link, NavLink } from "react-router-dom";
-import './Navbar.css';
 import { useState } from "react";
-import { FaBars, } from 'react-icons/fa';
-import { BsXLg } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import './Navbar.css';
+import { HiBars3BottomRight } from "react-icons/hi2";
+import { HiMiniXMark } from "react-icons/hi2";
 
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const navItems = [
-        { path: '/', display: 'Home' },
-        { path: '/', display: 'About' },
-        { path: '/', display: 'Contact' },
-        { path: '/', display: 'Services' },
-        { path: '/', display: 'Blog' }
-    ];
-
-    const handleClick = () => {
-        setIsOpen(!isOpen)
+    const [mobile, setMobile] = useState(false);
+    const handleMobileMenu = () => {
+        setMobile(!mobile)
     }
-
     return (
-        <div className="w-full py-4 shadow-lg nav sm:text-[18px]">
-            <div className="navbar sm:flex block ">
-                <div className="flex">
-                    <div>
-                        <Link className="text-2xl font-bold" to='/'>Fozlur</Link>
-                    </div>
-
-                    {/* toggle btn  */}
-                    <button className="sm:hidden block ms-auto ps-5" onClick={handleClick}>
-                        {isOpen ? <BsXLg></BsXLg> : <FaBars></FaBars>}
-                    </button>
+        <div className="shadow-lg py-5">
+            <div className="nav section-container mx-auto flex justify-between items-center">
+                <div>
+                    <Link>Brand</Link>
+                </div> 
+                <div className={`mobile-menu ${mobile ? 'open' : 'close'}`}>
+                    <ul className=" menu md:flex md:space-x-12 md:space-y-0 space-y-6 items-center">
+                        <li><Link to='/#about'>About</Link></li>
+                        <li><Link to='/#about'>Skills</Link></li>
+                        <li><Link to='/#about'>Portfolio</Link></li>
+                        <li><Link to='/#about'>Contact</Link></li>
+                        <li><button className=" border-red-700 border-2 px-4 py-2 rounded">Resume</button></li>
+                    </ul>
                 </div>
-
-                {/* nav items  */}
-                <ul className={`sm:flex sm:space-x-5 block ms-auto  ${isOpen ? 'is-open' : 'not-open'}`}>
+                <button onClick={handleMobileMenu} className="md:hidden border-2 border-[var(--primary-color)] p-1 text-2xl">
                     {
-                        navItems.map(item => <li
-                            className="navitem"
-                            onClick={handleClick}
-                            key={item.display}
-                        ><NavLink className="nav-item" activeclassname='active' to={item.path}>{item.display}</NavLink>
-                        </li>)
+                        mobile ? <HiMiniXMark />
+                            : <HiBars3BottomRight />
                     }
-                </ul>
+                </button>
             </div>
         </div>
     );
