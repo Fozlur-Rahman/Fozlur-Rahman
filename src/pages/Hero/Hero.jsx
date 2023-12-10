@@ -1,7 +1,7 @@
-import heroImg from '../../assets/images/hero/hero.png';
-import SubTitle from '../../components/SubTitle/SubTitle';
-import { FaLinkedin } from "react-icons/fa6";
-import { FaGooglePlusSquare, FaFacebookSquare, FaGithub } from "react-icons/fa";
+// import heroImg from '../../assets/images/hero/hero.png';
+// import SubTitle from '../../components/SubTitle/SubTitle';
+// import { FaLinkedin } from "react-icons/fa6";
+// import { FaGooglePlusSquare, FaFacebookSquare, FaGithub } from "react-icons/fa";
 
 
 
@@ -10,7 +10,7 @@ import { FaGooglePlusSquare, FaFacebookSquare, FaGithub } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section className="bg-slate-950 md:h-[70vh] py-20 relative">
+        <section className="bg-slate-950 md:h-[70vh] py-20">
 
             <div className="section-container h-full md:flex md:justify-between md:items-center space-y-20">
                 {/* =========================================================hero content */}
@@ -30,23 +30,21 @@ const Hero = () => {
                 </div>
 
                 {/* =========================================================hero Photo */}
-                <div className='m-4 mb-4 h-auto'>
+                {/* <div className='m-4 pb-4 h-auto'>
                     <img className='rounded-full ring-8 ring-sky-500  transition ring-offset-8' src={heroImg} alt="" />
-                </div>
+                </div> */}
+
+
+                {/* <div>
+                    <div className='important-links text-2xl md:space-y-4 space-y-0   flex md:flex-col md:items-start items-center absolute top-[130px] left-20 text-[var(--secondary-color)]'>
+                        <button><FaGithub /></button>
+                        <button><FaLinkedin /></button>
+                        <button><FaGooglePlusSquare /></button>
+                        <button><FaFacebookSquare /></button>
+                    </div>
+                    <SubTitle subTitle="Follow me"></SubTitle>
+                </div> */}
             </div>
-
-            <div className='important-links text-2xl md:space-y-4 space-y-0   flex md:flex-col md:items-start items-center absolute top-[130px] left-24 text-[var(--secondary-color)]'>
-                <button><FaGithub /></button>
-                <button><FaLinkedin /></button>
-                <button><FaGooglePlusSquare /></button>
-                <button><FaFacebookSquare /></button>
-
-
-
-            </div>
-            <SubTitle subTitle="Follow me"></SubTitle>
-
-
         </section>
     );
 };

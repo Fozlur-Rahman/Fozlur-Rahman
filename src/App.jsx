@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './Shared/Navbar/Navbar'
 import Hero from './pages/Hero/Hero'
+import About from './pages/About/About'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +11,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <Hero></Hero>
+      <About></About>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

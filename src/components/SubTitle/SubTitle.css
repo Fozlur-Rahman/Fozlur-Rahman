@@ -1,11 +1,5 @@
 .sub-title {
-    transform: rotate(-90deg);
+   
     width: 250px;
     /* margin-left: 150px; */
-}
-@media screen and (max-width:767px) {
-.sub-title {
-    transform: none;
-    bottom: 0;
-}
 }
