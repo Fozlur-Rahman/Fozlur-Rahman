@@ -13,7 +13,7 @@ const Navbar = () => {
 
     }
     return (
-        <div className="shadow-lg py-5">
+        <div className="shadow-lg py-5 bg-[var(--secondary-color)] sticky top-0 z-10">
             <div className="nav section-container mx-auto flex justify-between items-center">
                 <div>
                     <Link>Brand</Link>
@@ -21,9 +21,9 @@ const Navbar = () => {
                 <div className={`mobile-menu ${mobile ? 'open' : 'close'}`}>
                     <ul className="menu md:flex md:space-x-12 md:space-y-0 space-y-6 items-center">
                         <li><a href="#about">About</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><button className=" border-2 border-[var(--primary-color)] px-4 py-2 rounded">Resume</button></li>
                     </ul>
                 </div>
