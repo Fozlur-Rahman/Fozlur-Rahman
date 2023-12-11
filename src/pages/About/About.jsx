@@ -1,4 +1,5 @@
 import fozlurImg from '../../assets/images/hero/hero.png';
+import SocialLinksH from '../../components/SocialLinks/SocialLinksH';
 import SubTitle from '../../components/SubTitle/SubTitle';
 
 const About = () => {
@@ -17,6 +18,9 @@ const About = () => {
                             magnam maxime omnis? Maiores mollitia nisi est possimus at quaerat, eius
                             veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia assumenda eius accusantium accusamus, minima soluta numquam non voluptas quibusdam, velit ut a dignissimos laboriosam aperiam iure sapiente rem aut pariatur!
                         </p>
+                        <div className='mt-5'>
+                            <SocialLinksH></SocialLinksH>
+                        </div>
                         <div className="space-x-5 mt-10">
                             <button className="primary-btn">Hire Me</button>
                             <button className="secondary-btn">resume</button>

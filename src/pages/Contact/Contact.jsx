@@ -12,15 +12,15 @@ const Contact = () => {
                 </div>
                 <div className='md:flex justify-between mt-28'>
                     {/* =================contact form*/}
-                    <div className="contact-form bg-slate-600 rounded p-10  md:w-[50%] mx-auto">
+                    <div className="contact-form bg-[var(--secondary-color)] rounded p-10  md:w-[50%] mx-auto">
                         <form className='space-y-4 p-10'>
                             <input className='px-4 py-2 border-0 outline-none rounded w-full' type="text" id='name' placeholder='Enter Name' /> <br />
                             <input className='px-4 py-2 border-0 outline-none rounded w-full' type="email" id='email' placeholder='Enter Email' required /> <br />
-                            <input className='px-4 py-2 border-0 bg-[var(--secondary-color)] w-full rounded shadow' type="submit" value="Subscribe" />
+                            <input className='px-4 py-2 border-0 bg-[var(--primary-color)] w-full rounded shadow' type="submit" value="Subscribe" />
                         </form>
                         {/* social icons */}
 
-                        <div className='w-48 mx-auto'>
+                        <div className='w-32 mx-auto'>
                             <SocialLinksH></SocialLinksH>
                         </div>
                     </div>

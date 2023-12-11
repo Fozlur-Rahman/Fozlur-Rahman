@@ -4,7 +4,8 @@
 
 :root {
     --primary-color: rgb(98, 204, 246);
-    --secondary-color: #64748B;
+    /* --secondary-color: #64748B; */
+    --secondary-color: #0f1721;
 }
 body {
     background: #020617;

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { HiMiniXMark } from "react-icons/hi2";
+import logo from '../../assets/images/logo/logo.png';
 
 
 const Navbar = () => {
@@ -16,7 +17,9 @@ const Navbar = () => {
         <div className="shadow-lg py-5 bg-[var(--secondary-color)] sticky top-0 z-10">
             <div className="nav section-container mx-auto flex justify-between items-center">
                 <div>
-                    <Link>Brand</Link>
+                    <Link>
+                    <img className='w-32' src={logo} alt="" />
+                    </Link>
                 </div>
                 <div className={`mobile-menu ${mobile ? 'open' : 'close'}`}>
                     <ul className="menu md:flex md:space-x-12 md:space-y-0 space-y-6 items-center">
