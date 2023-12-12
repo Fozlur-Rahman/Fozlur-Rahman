@@ -4,6 +4,7 @@ import Admin from "../Admin/Admin";
 import Projects from "../Admin/Projects";
 import Followers from "../Admin/Followers";
 import AdminHome from "../Admin/AdminHome";
+import NewProject from "../Admin/NewProject";
 
 export const router = createBrowserRouter([
 
@@ -28,8 +29,8 @@ export const router = createBrowserRouter([
                 element: <Followers></Followers>
             },
             {
-                path: "/admin/newProject",
-                element: <Followers></Followers>
+                path: "/admin/projects/newProject",
+                element: <NewProject></NewProject>
             }
         ]
     }

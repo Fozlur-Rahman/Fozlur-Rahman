@@ -6,7 +6,7 @@ const Projects = () => {
         <div className='text-white'>
             <div className='flex mb-10 justify-between'>
                 <h1 className="text-2xl">Total Projects: 10</h1>
-                <Link className='bg-[var(--body-color)] px-4 py-2 capitalize rounded'>create new</Link>
+                <Link to="newProject" className='bg-[var(--body-color)] px-4 py-2 capitalize rounded'>create new</Link>
             </div>
             <table>
                 <thead>
