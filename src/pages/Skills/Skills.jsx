@@ -17,7 +17,10 @@ const Skills = () => {
                 {/* ================= skills */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-28 pt-16">
                     {/* ==============comfortable skills */}
-                    <div className="">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1500"
+                        className="">
                         <h2 className="text-2xl text-white mb-5 border-b inline-block">Comfortable</h2>
                         <div className="flex flex-wrap gap-2">
                             {comfortable.map((element, index) => (
@@ -27,7 +30,10 @@ const Skills = () => {
                     </div>
 
                     {/* ==============Familiar skills */}
-                    <div className="">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1500"
+                        className="">
                         <h2 className="text-2xl text-white mb-5 border-b inline-block">Familiar</h2>
                         <div className="flex flex-wrap gap-2">
                             {familiar.map((element, index) => (
@@ -35,7 +41,10 @@ const Skills = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1500"
+                        className="">
                         <h2 className="text-2xl text-white mb-5 border-b inline-block">Tools</h2>
                         <div className="flex flex-wrap gap-2">
                             {tools.map((element, index) => (
@@ -46,7 +55,10 @@ const Skills = () => {
                 </div>
 
                 {/* ==============language */}
-                <div className="mt-20">
+                <div
+                    data-aos="zoom-in"
+                    data-aos-duration="1500"
+                    className="mt-20">
                     <h2 className="text-2xl text-white mb-5 border-b inline-block">Language</h2>
                     <div className="flex flex-wrap gap-2">
                         {language.map((element, index) => (

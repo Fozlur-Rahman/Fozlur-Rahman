@@ -25,12 +25,16 @@ const Portfolio = () => {
                         {/* =====================tab buttons */}
                         <div className="flex space-x-4 text-[var(--secondary-color)]">
                             <button
+                                data-aos="fade-right"
+                                data-aos-duration="2000"
                                 className={`px-4 py-2 border-2 border-[var(--primary-color)] rounded capitalize ${activeTab === 1 ? 'bg-[var(--primary-color)]' : ''}`}
                                 onClick={() => handleTabClick(1)}
                             >
                                 web
                             </button>
                             <button
+                                data-aos="fade-left"
+                                data-aos-duration="2000"
                                 className={`px-4 py-2 border-2 border-[var(--primary-color)] capitalize rounded ${activeTab === 2 ? 'bg-[var(--primary-color)]' : ''}`}
                                 onClick={() => handleTabClick(2)}
                             >
@@ -44,10 +48,10 @@ const Portfolio = () => {
                         <div className="mt-4">
                             {/* ====================web contents */}
                             {activeTab === 1 && <div className="w-full">
-                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-8">
 
                                     {/*======================= tab card */}
-                                    <div className="bg-white pb-0 rounded">
+                                    <div data-aos="fade-up" data-aos-duration="500" className="bg-white pb-0 rounded">
                                         <div className="overflow-hidden">
                                             <img className="border-box  transition-transform transform hover:scale-110 duration-500 overflow-hidden" src={card1} alt="" />
                                         </div>
@@ -70,7 +74,7 @@ const Portfolio = () => {
                                         </div>
                                     </div>
                                     {/*======================= tab card */}
-                                    <div className="bg-white pb-0 rounded">
+                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" className="bg-white pb-0 rounded">
                                         <div className="overflow-hidden">
                                             <img className="border-box  transition-transform transform hover:scale-110 duration-500 overflow-hidden" src={card1} alt="" />
                                         </div>
@@ -90,7 +94,7 @@ const Portfolio = () => {
                                         </div>
                                     </div>
                                     {/*======================= tab card */}
-                                    <div className="bg-white pb-0 rounded">
+                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" className="bg-white pb-0 rounded">
                                         <div className="overflow-hidden">
                                             <img className="border-box  transition-transform transform hover:scale-110 duration-500 overflow-hidden" src={card1} alt="" />
                                         </div>
@@ -110,7 +114,7 @@ const Portfolio = () => {
                                         </div>
                                     </div>
                                     {/*======================= tab card */}
-                                    <div className="bg-white pb-0 rounded">
+                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" className="bg-white pb-0 rounded">
                                         <div className="overflow-hidden">
                                             <img className="border-box  transition-transform transform hover:scale-110 duration-500 overflow-hidden" src={card1} alt="" />
                                         </div>

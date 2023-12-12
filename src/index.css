@@ -2,19 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* =================css variable for colors */
 :root {
     --primary-color: rgb(98, 204, 246);
-    /* --secondary-color: #64748B; */
+    --body-color: #020617;
     --secondary-color: #0f1721;
+
 }
+
 body {
-    background: #020617;
+    background: var(--body-color);
 }
-a, button, p {
+
+a,
+button,
+p {
     font-size: 16px;
     /* font-weight: 500; */
     color: white;
 }
+
 .section-container {
     max-width: 1200px;
     margin-right: auto;
@@ -23,11 +31,7 @@ a, button, p {
     overflow: hidden;
 }
 
-@media only screen and (max-width:1450px) {
-    .section-container {
-        max-width: 80%;
-    }
-}
+
 
 .primary-btn {
     background: var(--primary-color);
@@ -69,4 +73,12 @@ a, button, p {
 
 .high-light-text {
     color: var(--primary-color);
+}
+
+
+/* ============================= for container section */
+@media only screen and (max-width:1450px) {
+    .section-container {
+        max-width: 80%;
+    }
 }

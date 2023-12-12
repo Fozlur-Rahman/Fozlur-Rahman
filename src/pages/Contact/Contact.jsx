@@ -5,14 +5,18 @@ import SocialLinksH from '../../components/SocialLinks/SocialLinksH';
 
 const Contact = () => {
     return (
-        <section id='contact' className='mb-28 pb-5 '>
+        <section id='contact' className='py-20 my-20 '>
             <div className="section-container">
                 <div>
                     <SubTitle subTitle="Contact"></SubTitle>
                 </div>
-                <div className='md:flex justify-between mt-28'>
+                <div
+                    data-aos="zoom-in"
+                    data-aos-duration="1000"
+                    data-aos-anchor-placement="top-bottom"
+                    className=' mt-28'>
                     {/* =================contact form*/}
-                    <div className="contact-form bg-[var(--secondary-color)] rounded p-10  md:w-[50%] mx-auto">
+                    <div className="contact-form bg-[var(--secondary-color)] rounded p-5 md:p-8 lg:p-10  md:w-[60%] mx-auto">
                         <form className='space-y-4 p-10'>
                             <input className='px-4 py-2 border-0 outline-none rounded w-full' type="text" id='name' placeholder='Enter Name' /> <br />
                             <input className='px-4 py-2 border-0 outline-none rounded w-full' type="email" id='email' placeholder='Enter Email' required /> <br />

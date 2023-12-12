@@ -10,7 +10,15 @@ const About = () => {
                     <SubTitle subTitle="about"></SubTitle>
                 </div>
                 <div className='w-full h-auto flex flex-col-reverse  md:flex-row justify-between items-center mt-24'>
-                    <div className="about-info w-full md:w-[50%] text-center md:text-start">
+                    {/* about info  */}
+
+                    <div
+                        data-aos="fade-right"
+                        data-aos-duration="1000"
+                        className="about-info w-full md:w-[50%] text-center md:text-start"
+                    >
+
+
                         <h2 className='text-white text-4xl mb-6'>About Me</h2>
                         <p className=''>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rerum
@@ -18,7 +26,7 @@ const About = () => {
                             magnam maxime omnis? Maiores mollitia nisi est possimus at quaerat, eius
                             veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia assumenda eius accusantium accusamus, minima soluta numquam non voluptas quibusdam, velit ut a dignissimos laboriosam aperiam iure sapiente rem aut pariatur!
                         </p>
-                        <div className='mt-5'>
+                        <div className='w-32 mt-5 md:mx-0 mx-auto'>
                             <SocialLinksH></SocialLinksH>
                         </div>
                         <div className="space-x-5 mt-10">
@@ -26,7 +34,13 @@ const About = () => {
                             <button className="secondary-btn">resume</button>
                         </div>
                     </div>
-                    <div className=' p-8 mb-12 md:mb-0 '>
+
+                    {/* about image */}
+                    <div
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                        // data-aos-anchor-placement="top-bottom"
+                        className=' p-8 mb-12 md:mb-0 '>
                         <img
                             style={{
                                 boxShadow: '0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(255, 255, 255, 0.2)',
